@@ -9,11 +9,14 @@
     box-sizing: border-box;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p, div, span, button, hr {
+html, body, h1, h2, h3, h4, h5, h6, p, div, span, button,{
     font-family: phetsarath_ot;
     vertical-align: middle;
 }
-
+hr{
+    padding: 3px;
+    margin: 3px;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -67,6 +70,8 @@ footer {
     left: 5mm;
     right: 5mm;
     width: calc(100% - 10mm);
+}
+footer, p{
     font-size: 8px;
 }
 /* @media Print  */
