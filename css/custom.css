@@ -13,6 +13,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, span, button,{
     font-family: phetsarath_ot;
     vertical-align: middle;
 }
+header{
+    margin-bottom: 20px;
+}
 hr{
     padding: 3px;
     margin: 3px;
