@@ -26,8 +26,8 @@ table {
 }
 table tr th,
 table tr td {
-    padding: 3px !important;
-    margin: 3px !important;
+    padding: 2px !important;
+    margin: 2px !important;
     font-size: 10px;
 }
 
@@ -46,12 +46,11 @@ table tr td {
     flex-direction: column;
 }
 
-
 p {
     text-align: justify;
-    font-size: 10px;
-    padding: 2px;
-    margin: 2px;
+    font-size: 10px !important;
+    padding: 1px !important;
+    margin: 1px !important;
 }
 div.card-div {
     background-color: #cfe2f3;
@@ -61,7 +60,6 @@ div.div-insure_info {
     width: 16.66%;
 }
 .placeholder {
-    padding-top: 20px;
     width: 40px;
 }
 p.insure_info {
@@ -74,8 +72,11 @@ footer {
     right: 5mm;
     width: calc(100% - 10mm);
 }
-footer, p{
-    font-size: 8px;
+footer, p.footer-font{
+    font-size: 8px !important;
+    padding: 1px !important;
+    margin: 1px !important;
+    color: #002060 !important;
 }
 /* @media Print  */
 @media print {
