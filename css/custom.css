@@ -78,6 +78,9 @@ footer, p.footer-font{
     margin: 1px !important;
     color: #002060 !important;
 }
+.w3-deep-indigo{
+    color: #002060;
+}
 /* @media Print  */
 @media print {
     @page {
