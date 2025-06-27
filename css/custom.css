@@ -81,6 +81,9 @@ footer, p.footer-font{
 .w3-deep-indigo{
     color: #002060;
 }
+.w3-p-hieght{
+    line-height: 23px;
+}
 /* @media Print  */
 @media print {
     @page {
