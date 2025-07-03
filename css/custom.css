@@ -1,6 +1,6 @@
 @font-face {
     font-family: "phetsarath_ot";
-    src: url(/fonts/phetsarath_ot.woff2) format('woff2'),
+    src: url(../fonts/phetsarath_ot.woff2) format('woff2'),
 }
 
 * {
@@ -10,7 +10,7 @@
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, div, span, button{
-    font-family: "phetsarath_ot" !important;
+    font-family: "phetsarath_ot";
     vertical-align: middle;
 }
 header{
