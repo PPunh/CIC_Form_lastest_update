@@ -2,103 +2,128 @@
     font-family: phetsarath_ot;
     src: url(/fonts/phetsarath_ot.woff2) format('woff2'),
 }
-
+@font-face {
+    font-family: Nuanta-regular;
+    src: url(/fonts/Nuanta-Regular.woff2) format('woff2'),
+}
+@font-face {
+    font-family: Nuanta-medium;
+    src: url(/fonts/Nuanta-Medium.woff2) format('woff2'),
+}
+@font-face {
+    font-family: Nuanta-bold;
+    src: url(/fonts/Nuanta-Bold.woff2) format('woff2'),
+}
+@font-face {
+    font-family: saysettha_95;
+    src: url(/fonts/saysettha_95.woff2) format('woff2'),
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 html, body, h1, h2, h3, h4, h5, h6, p, div, span, button{
-    font-family: phetsarath_ot !important;
-    vertical-align: middle;
+    font-family: Nuanta-bold !important;
 }
-header{
-    margin-bottom: 20px;
+.textPlateLabel{
+    font-size: 2rem;
 }
-hr{
-    padding: 3px;
-    margin: 3px;
+#textPlateInput, #selectProvince{
+    width: 20%;
+    height: 50px;
+    font-size: 1.2rem;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.plateProvince{
+    font-size: 20px; ;
 }
-table tr th,
-table tr td {
-    padding: 2px !important;
-    margin: 2px !important;
-    font-size: 10px;
-}
-
-.page {
-    width: 210mm;
-    min-height: 297mm;
-    margin: 10px auto;
-    padding: 5mm;
-    border: 1px solid #ccc;
-    background: white;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-    position: relative;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
+.plate {
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 6px;
 }
 
-p {
-    text-align: justify;
-    font-size: 10px !important;
-    padding: 1px !important;
-    margin: 1px !important;
+.desc {
+    width: 250px;
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
 }
-div.card-div {
-    background-color: #cfe2f3;
+
+.plate .number {
+    font-weight: bold;
+    display: block;
+    margin-top: 4px;
 }
-div.div-insure_info {
-    vertical-align: middle;
-    width: 16.66%;
+/* Blue-White  */
+.blue-white {
+    background-color: #0033ff !important;
+    color: #ffffff !important;
 }
-.placeholder {
-    width: 40px;
+.plate-border-blue-white{
+    width: 245px;
+    height: 95px;
+    border: 2px solid #ffffff !important;
+    border-radius: 5px;
+    margin-left: -13px;
+    margin-top: -5px;
 }
-p.insure_info {
-    font-size: 10px;
+
+/* Yellow-Black  */
+.yellow-black {
+    background-color: #FCBB0B !important;
+    color: #000000 !important;
 }
-footer {
-    position: absolute;
-    bottom: 5px;
-    left: 5mm;
-    right: 5mm;
-    width: calc(100% - 10mm);
+.plate-border-yellow-black{
+    width: 245px;
+    height: 95px;
+    border: 2px solid #000000 !important;
+    border-radius: 5px;
+    margin-left: -13px;
+    margin-top: -5px;
 }
-footer, p.footer-font{
-    font-size: 8px !important;
-    padding: 1px !important;
-    margin: 1px !important;
-    color: #002060 !important;
+
+
+/* Yellow-Black  */
+.white-black {
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
-.w3-deep-indigo{
-    color: #002060;
+.plate-border-white-black{
+    width: 245px;
+    height: 95px;
+    border: 2px solid #000000 !important;
+    border-radius: 5px;
+    margin-left: -13px;
+    margin-top: -5px;
 }
-.w3-p-hieght{
-    line-height: 23px;
+
+
+/* white-soft_blue  */
+.white-soft_blue {
+    background-color: #ffffff !important;
+    color: #08A4FC !important;
 }
-/* @media Print  */
-@media print {
-    @page {
-        size: A4;
-		margin: 0;
-    }
-    body {
-        margin: 0;
-    }
-    .page {
-        margin: 0;
-        page-break-after: always;
-        box-shadow: none;
-    }
-    .page:last-child {
-        page-break-after: auto;
-    }
+.plate-border-white-soft_blue{
+    width: 245px;
+    height: 95px;
+    border: 2px solid #08A4FC !important;
+    border-radius: 5px;
+    margin-left: -13px;
+    margin-top: -5px;
+}
+
+/* white-soft_blue  */
+.yellow-soft_blue {
+    background-color: #FCBB0B !important;
+    color: #08A4FC !important;
+}
+.plate-border-yellow-soft_blue{
+    width: 245px;
+    height: 95px;
+    border: 2px solid #08A4FC !important;
+    border-radius: 5px;
+    margin-left: -13px;
+    margin-top: -5px;
 }

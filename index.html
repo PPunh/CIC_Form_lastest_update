@@ -1,471 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lo">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIC Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="images/logo/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/custom.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIC Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/logo/favicon-32x32.png" type="image/png">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
-<!-- Page One  -->
-<div class="page phetsarath_ot">
-    <header>
-        <div class="w3-cell-row">
-            <div class="w3-cell  ">
-                <img src="images/logo/portage-cic-logo.png" alt="logo-header" style="width:200px;">
-            </div>
-            <div class="w3-cell  ">
-                <p style="font-size:8px!important; text-align:right;" class="w3-right w3-deep-indigo">
-                    <strong>ສອບຖາມລາຍລະອຽດ | More information, Call: 1111</strong><br>
-                    ແຈ້ງອຸປະຕິເຫດ | Accident Helpline, Call: 1112 <br>
-                    Website:<a href="https://cic.com.la/">www.cic.com.la</a>
-                </p>
-            </div>
-        </div>
-    </header>
+<body class="w3-light-grey w3-padding">
+    <div class="w3-container w3-row-padding">
 
-    <div class="w3-container" style="margin-top: -10px;">
-        <p class="w3-deep-indigo" style="font-weight: 900; font-size: 12px!important;">ສັນຍາປະກັນໄພ | <strong>Central Insurence Conpany Limited</strong> </p>
-        <p class="w3-deep-indigo" style="font-weight: 900; font-size: 12px!important;">ໃບເງື່ອນໄຂສະເພາະ ປະກັນໄພລົດແບບບັງຄັບ + <input type="checkbox"> ຄຸ້ມກັນຜູ້ຂັບຂີ່ ແລະ ຜູ້ໂດຍສານ | <br>
-         <strong>Compulsory Motor Insurence Schedule + <input type="checkbox">  Cover Driver and Passengers</strong> </p>
-        <div class="card-div w3-cell-row w3-card">
-            <!-- customer id  -->
-            <div class="div-insure_info w3-cell w3-center">
-                <img src="images/icons/client_no.png"" alt="pleasehoder" class="placeholder">
-                <p class="w3-center insure_info">
-                    ລະຫັດລູກຄ້າ <br>
-                    Client No <br>
-                    <strong class="w3-deep-indigo">XXXXXXXX</strong>
-                </p>
+        <div class="w3-container" class="w3-padding w3-margin">
+            <label for="textPlateLabel" class="textPlateLabel">ປ້ອນເລກທະບຽນ</label> <br>
+            <input type="text" name="textPlateInput" id="textPlateInput" class="w3-round-large w3-padding">
+        </div>
+        <div class="w3-container w3-margin-top">
+            <select name="selectProvince" id="selectProvince">
+                <option value="PleaseSelectPlateProvince">ກະລຸນາເລືອກແຂວງ / Please select plate province</option>
+                <option value="phongsaly">ຜົ້ງສາລີ / Phonsaly</option>
+                <option value="luangnumtha">ຫຼວງນ້ຳທາ / Luangnumtha</option>
+                <option value="borkeo">ບໍແກ້ວ / Borkeo</option>
+                <option value="oudomxay">ອຸດົມໄຊ / Oudomxay</option>
+                <option value="luangprabang">ຫຼວງພະບາງ / Luangprabang</option>
+                <option value="xiengkhuang">ຊຽງຂວາງ / xiengkhuang</option>
+                <option value="xaiyabuly">ໄຊຍະບໍລີ / Xaiyabuly</option>
+                <option value="huaphan">ຫົວພັນ / Huaphan</option>
+                <option value="vientiane_cap">ນະຄອນຫຼວງວຽງຈັນ / Viantiane Capital</option>
+                <option value="vientiane_province">ວຽງຈັນ / Vientiane province</option>
+                <option value="xaisomboun">ໄຊສົມບູນ / Xaisomboun</option>
+                <option value="borlikhamxay">ບໍລິຄຳໄຊ / Borlikhamxay</option>
+                <option value="khammuan">ຄຳມວນ / Khammuan</option>
+                <option value="savannakhet">ສະຫວັນນະເຂດ / Savannakhet</option>
+                <option value="salavanh">ສາລະວັນ / Salavanh</option>
+                <option value="champasak">ຈຳປາສັກ / Champasak</option>
+                <option value="sekong">ເຊກອງ / Sekong</option>
+                <option value="attapue">ອັດຕະປື / Attapue</option>
+            </select>
+        </div>
+
+
+        <!-- ທະບຽນລົດ  -->
+        <!-- ລັດຖະບານ  -->
+        <div class="w3-container w3-center w3-margin-top">
+            <div class="w3-card w3-padding plate blue-white w3-margin">
+                <div class="plate-border-blue-white">
+                    <span class="plateProvince">ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <span class="number">ກກ 0000</span>
+                </div>
             </div>
-            <!-- Policy No  -->
-            <div class="div-insure_info w3-cell w3-center">
-                <img src="images/icons/insurance_policy_no.png" alt="pleasehoder" class="placeholder">
-                <p class="w3-center insure_info">
-                    ເລກທີ່ສັນຍາປະກັນໄພ <br>
-                    Insurence Policy No <br>
-                    <strong class="w3-deep-indigo">XXXXXXXX</strong>
-                </p>
+            <div class="desc">ລັດຖະບານ</div>
+        </div>
+
+        <!-- ເອກະຊົນລາວ  -->
+        <div class="w3-container w3-center w3-margin-top">
+            <div class="w3-card w3-padding plate yellow-black w3-margin">
+                <div class="plate-border-yellow-black">
+                    <span class="plateProvince">ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <span class="number">ກກ 0000</span>
+                </div>
             </div>
-            <!-- Customer Type  -->
-            <div class="div-insure_info w3-cell w3-center">
-                <img src="images/icons/type_of_client.png" alt="pleasehoder" class="placeholder">
-                <p class="w3-center insure_info">
-                    ປະເພດລູກຄ້າ <br>
-                    Type of client <br>
-                    <strong class="w3-deep-indigo">individual</strong>
-                </p>
+            <div class="desc">ເອກະຊົນລາວ</div>
+        </div>
+
+        <!-- ບໍລິສັດ/ທຸລະກິດ 100%  -->
+        <div class="w3-container w3-center w3-margin-top">
+            <div class="w3-card w3-padding plate white-black w3-margin">
+                <div class="plate-border-white-black">
+                    <span class="plateProvince">ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <span class="number">ກກ 0000</span>
+                </div>
             </div>
-            <!-- Type of Insurance Policy  -->
-            <div class="div-insure_info w3-cell w3-center">
-                <img src="images/icons/type_of_insurance_policy.png" alt="pleasehoder" class="placeholder">
-                <p class="w3-center insure_info">
-                    ປະເພດສັນຍາ <br>
-                    Type of Insurance Policy <br>
-                    <strong class="w3-deep-indigo">ສັນຍາໃຫມ| new</strong>
-                </p>
+            <div class="desc">ບໍລິສັດ/ທຸລະກິດ 100%</div>
+        </div>
+
+
+        <!-- ບໍລິສັດ/ທຸລະກິດ 1%  -->
+        <div class="w3-container w3-center w3-margin-top">
+            <div class="w3-card w3-padding plate white-soft_blue w3-margin">
+                <div class="plate-border-white-soft_blue">
+                    <span class="plateProvince">ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <span class="number">ກກ 0000</span>
+                </div>
             </div>
-            <!-- Certificate No  -->
-            <div class="div-insure_info w3-cell w3-center">
-                <img src="images/icons/certificate_no.png" alt="pleasehoder" class="placeholder">
-                <p class="w3-center insure_info">
-                    ເລກທີ່ສັນຍາປະກັນໄພ <br>
-                    Certificate No <br>
-                    <strong class="w3-deep-indigo">XXXXXXXX</strong>
-                </p>
+            <div class="desc">ບໍລິສັດ/ທຸລະກິດ 1%</div>
+        </div>
+
+
+        <!-- ເອກະຊົນຕ່າງດ້າວ  -->
+        <div class="w3-container w3-center w3-margin-top">
+            <div class="w3-card w3-padding plate yellow-soft_blue w3-margin">
+                <div class="plate-border-yellow-soft_blue">
+                    <span class="plateProvince">ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <span class="number">ກກ 0000</span>
+                </div>
             </div>
-            <!-- CQR Code  -->
-            <div class="div-insure_info w3-cell" style="text-align: right;">
-                <img src="images/qr_code/qr_code.png" alt="qr_code" style="width:80%;">
+            <div class="desc">ເອກະຊົນຕ່າງດ້າວ</div>
+        </div>
+
+        <!-- ບໍລິສັດ/ທຸລະກິດ 1%  -->
+        <div class="w3-container w3-center w3-margin-top">
+            <div class="w3-card w3-padding plate white-soft_blue w3-margin">
+                <div class="plate-border-white-soft_blue">
+                    <span class="plateProvince">ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <span class="number">ກກ 0000</span>
+                </div>
             </div>
+            <div class="desc">ອົງການຈັດຕັ້ງສາກົນ (ນຳໃຊ້ສ່ວນຕົວ)</div>
         </div>
     </div>
-
-    <div class="w3-container">
-        <p class="w3-deep-indigo"> <u><strong>I. ການສະເໜີຂອງຜູ້ໄດ້ຮັບການປະກັນໄພ  | DECLARATION OF THE INSURED</strong> </u> </p>
-
-        <!-- Insured Information  -->
-        <p>1. ຜູ້ໄດ້ຮັບການປະກັນໄພ | <strong>The insured</strong> </p>
-            <hr>
-            <div class="w3-cell-row w3-container">
-                <div class="w3-cell" style="width: 40%;">
-                    <p>ຊື່ ແລະ ນາມສະກຸນ | Name & Surname:</p>
-                    <p>ເພດ | Gender:</p>
-                    <p>ອາຍຸ | Age:</p>
-                    <p>ທີ່ຢູ່ | Address:</p>
-                    <p>ເບີໂທຫລັກ | Main mobile No:</p>
-                </div>
-                <div class="w3-cell" style="width: 60%;">
-                    <p>ທ່ານ ສົມຊາຍ ໄຊປັນຍາ</p>
-                    <p>ຊາຍ</p>
-                    <p>35</p>
-                    <p>ບ. ຊຽງຍືນ, ມ. ຈັນທະບູລີ, ນະຄອນຫລວງວຽງຈັນ</p>
-                    <p>020 0000 0000</p>
-                </div>
-            </div>
-            <hr>
-
-            <!-- Vehicle Details  -->
-        <p>2. ລາຍລະອຽດຂອງໂຕລົດ | <strong> Detail of Vehicle </strong> </p>
-        <div class="w3-cell-row w3-container">
-            <div class="w3-cell" style="width: 40%;">
-                <p>ຍີ່ຫໍ້ ແລະ ແບບ | Mark and Model:</p>
-                <p>ເລກທະບຽນ, ສີປ້າຍ, ແຂວງ | Plate No, Plate Color, Province:</p>
-                <p>ເລກຈັກ | Engine No:</p>
-                <p>ເລກຖັງ | Chassis No:</p>
-                <p>ປະເພດລົດ ແລະ ປະເພດການນຳໃຊ້ | Vehicle type & Usage</p>
-            </div>
-
-            <div class="w3-cell" style="width: 60%;">
-                <p>TOYOTA REVO</p>
-                <p>ກກ 1819, ເຫລືອງ-ດຳ, ກຳແພງນະຄອນ</p>
-                <p>DF0212330122333</p>
-                <p>DD1234524445</p>
-                <p>+2,000 cc; ນໍາໃຊ້ສ່ວນຕົວ</p>
-            </div>
-        </div>
-
-        <!-- COVERAGE OF INSURER  -->
-        <p class="w3-deep-indigo"> <u> <strong>II. ການຄຸ້ມກັນຂອງຜູ້ປະກັນໄພ | COVERAGE OF INSURER</strong> (ບໍລິສັດ ເຊັນໂທຣ ປະກັນໄພ | <strong>Central Insurance Company Limited</strong> ) </u> </p>
-        <table class="w3-table">
-            <tr style="background-color:#cfe2f3;">
-                <th class="w3-border" style="width:80%;vertical-align: middle;">ລາຍລະອຽດການຄຸ້ມກັນ | Detail of Coverage</th>
-                <th class="w3-border" style="width:20%;vertical-align: middle;text-align:center;">ວົງເງິນປະກັນໄພ | Sum insured <br> (ກີບ/LAK) </th>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    <strong class="w3-deep-indigo">1. ຄຸ້ມກັນຄວາມຮັບຜິດຊອບທາງແພ່ງຕໍ່ບຸກຄົນທີ່ສາມ ຂໍ້"ກຂ" | Third Party Liability Cover "AB"</strong> <br>
-                    1.1. **ຄວາມເສຍຫາຍທາງດ້ານຮ່າງກາຍ | Bodily injury
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">ກຂ 00/ AB 00</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    1.1.1. ເສຍຊີວິດ ຫລື ພິການຖາວອນທັງຫມົດ(ສູງສຸດຕໍ່ຄົນ) | Death or Total Permanent Disability(Maximun per person)
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        15,000,000
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    1.1.2. ຄ່າປິ່ນປົວ (ສູງສຸດຕໍ່ຄົນ) | Medical Expenses (Maximum per person)
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        3,000,000
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    (ໃນນັ້ນຄ່າບາສີສູ່ຂວັນກໍລະນີນອນໂຮງໝໍເກີນ 24 ຊົ່ວໂມງຕິດຕໍ່ກັນ) | (In which Baci fee in case of hospitalization in 24 hours )
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        500,000
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    ** ຄວາມເສຍຫາຍທາງດ້ານຮ່າງກາຍ (ສູງສຸດຕໍ່ອຸປະຕິເຫດ1ຄັ້ງ) | Bodily injury (Maximum per accident)
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        125,000,000
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left w3-border-bottom" style="width:80%;vertical-align: middle;">
-                    1.2 ຄວາມເສຍຫາຍທາງດ້ານວັດຖຸ (ສູງສຸດຕໍ່ອຸປະຕິເຫດ1ຄັ້ງ) | Material Damages (Maximum per accident)
-                </td>
-                <td class="w3-border-left w3-border-bottom w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        6,000,000
-                    </strong>
-                </td>
-            </tr>
-            <!-- table header 2 -->
-            <tr>
-                <th class="w3-border" style="width:80%;vertical-align: middle;" colspan="2">
-                    <strong class="w3-deep-indigo">
-                        ການຄຸ້ມກັນເພີ້ມເຕີມດັ່ງລຸ່ມນີ້ | Additional of coverage as below:
-                    </strong>
-                </th>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    <strong class="w3-deep-indigo">
-                        2. ຄຸ້ມກັນຜູ້ຂັບຂີ່ ແລະ ຜູ້ໂດຍສານ | Driver & Passengers Cover ຂໍ້  ”ດ”/I“(ຈໍານວນບ່ອນນັ່ງໃນລົດ  |  Number of Seats in vehicle = 5 ບ່ອນນັ່ງ/Seats)
-                    </strong>
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        ດ 00 5 ບ່ອນນັ່ງ / I 00  5Seats
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left " style="width:80%;vertical-align: middle;">
-                    2.1 ເສຍຊິວິດ ຫຼື ພິການຖາວອນທັງໜົດ(ສູງສຸດຕໍ່ຄົນ) | Death or Total Permanent Disability (Maximum per person)
-                </td>
-                <td class="w3-border-left w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        15,000,000
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="w3-border-left w3-border-bottom" style="width:80%;vertical-align: middle;">
-                    2.2 ຄ່າປິ່ນປົວ (ສູງສຸດຕໍ່ຄົນ) | Medical Expenses (Maximum per person)
-                </td>
-                <td class="w3-border-left w3-border-bottom w3-border-right" style="width:20%;vertical-align: middle;text-align:right;">
-                    <strong class="w3-deep-indigo">
-                        3,000,000
-                    </strong>
-                </td>
-            </tr>
-        </table>
-        <!-- DETAIL OF PREMIUM (LAK) -->
-         <p class="w3-deep-indigo"> <u> <strong>III. ລາຍລະອຽດຄ່າທຳນຽມ (ກີບ) | <strong>DETAIL OF PREMIUM (LAK) </u> </p>
-        <table class="w3-table w3-border">
-            <tr>
-                <td class=" w3-border-right" style="width:80%;">ຄ່າທໍານຽມຕົວຈິງ | Net premium</td>
-                <td style="width:20%; text-align:right;">363,000 LAK</td>
-            </tr>
-            <tr>
-                <td class=" w3-border-right" style="width:80%;">ອາກອນມູນຄ່າເພີ່ມ | VAT 10%</td>
-                <td style="width:20%; text-align:right;">36,300 LAK</td>
-            </tr>
-            <tr>
-                <td class=" w3-border-right" style="width:80%;">ຄ່າຂຶ້ນທະບຽນ | Register fee</td>
-                <td style="width:20%; text-align:right;">20,000 LAK</td>
-            </tr>
-            <tr>
-                <td class=" w3-border-right" style="width:80%;">ຄ່າປະກອບເຂົ້າໃນກອງທຶນປົກປ້ອງຜູ້ຖືກເຄາະຮ້າຍຕາມເສັ້ນທາງ 1% ຂອງຄ່າທໍານຽມຕົວຈິງ | Road Victim Protection Fund (RVPF) 1% of Net Premium</td>
-                <td style="width:20%; text-align:right;">3,630 LAK</td>
-            </tr>
-            <tr>
-                <td class="w3-border w3-light-gray" style="width:80%;">ລວມຄ່າທຳນຽມທີ່ຕ້ອງຈ່າຍ | Total Premium to be paid</td>
-                <td class="w3-border w3-light-gray" style="width:20%; text-align:right;">422,930 LAK</td>
-            </tr>
-        </table>
-
-        <p class="w3-deep-indigo"> <strong>ໄລຍະການຄຸ້ມກັນ | Period of coverage: 1 ປີ | year</strong> </p>
-        <p>ວັນທີປະຕິບັດ | Inception Date: 01/01/2025 ເວລາ| At: 08:00 ໂມງ | H; ວັນສິ້ນສຸດສັນຍາ | Expiry Date: 31/12/2025 ເວລາ| At: 23:59ໂມງ | H</p>
-        <p>ໝາຍເຫດ | Note: ສັນຍາສະບັບນີ້ບໍ່ສາມາດຍົກເລີກ ແລະ ຖອນເງິນຄືນໄດ | No cancelation and non-refundable of this policy.</p>
-        <table class="w3-table">
-            <tr>
-                <td style="width:55%;"></td>
-                <td style="width:45%; text-align:center;">
-                    ທີ່ | At: ນະຄອນຫຼວງວຽງຈັນ, ວັນທີອອກສັນຍາ | Issue date: DD / MM / YYYY <br>
-                    <strong> ຜູ້ອຳນວຍການ | CEO </strong> <br><br><br>
-
-                    ຊືແຈ້ງ: ...............................................
-                </td>
-            </tr>
-        </table>
-
-        <footer>
-            <p style="text-align: center;">ຕົວແທນ | Agent____________________; ລະຫັດ | Code____________________; ເບີໂທ | Phone No____________________;</p>
-            <div class="w3-cell-row w3-text-gray">
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        ບໍລິສັດ ເຊັນໂທຣ ປະກັນໄພ<br>
-                        ເລກທີ່: xxx, ຖະໜົນ:xxxx <br>
-                        ຖະໜົນ ສະພັງໝໍ້, ບ້ານ ນາໄຊ, ເມືອງ ໄຊເສດຖາ, ນະຄອນຫຼວງວຽງຈັນ <br>
-                        ໂທລະສັບ: 020 1111 2222, ໂທ: 021 111222,  ແຈ້ງອຸປະຕິເຫດ 24 ຊົ່ວໂມງ ໂທ: 1112,
-                    </p>
-                </div>
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        Central Insurance Company Limited<br>
-                        xx, xxxxx Avenue <br>
-                        Saphangmor Road, Ban Naxay , Xaysettha District, Vientiane Capita <br>
-                        Phone: 020 1111 2222, Call: 021 111222, ;24 hrs./7 Accident Helpline: 1112,
-                    </p>
-                </div>
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        website: <a href="https://cic.com.la/">www.cic.com.la</a> <br>
-                        Email: info@cic.com.la <br>
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-
-
-<!-- Page Two  -->
-<div class="page phetsarath_ot" style="color: #002060;">
-    <!-- Header  -->
-    <header>
-      <div class="w3-cell-row">
-          <div class="w3-cell  ">
-              <img src="images/logo/portage-cic-logo.png" alt="logo-header" style="width:200px;">
-          </div>
-          <!-- <div class="w3-cell  ">
-              <p style="font-size:8px!important; text-align:right; color: #002060;" class="w3-right">
-                    <strong>ສອບຖາມລາຍລະອຽດ | More information, Call: 1111</strong><br>
-                    ແຈ້ງອຸປະຕິເຫດ | Accident Helpline, Call: 1112 <br>
-                    Website:<a href="https://cic.com.la/">www.cic.com.la</a>
-                </p>
-          </div> -->
-      </div>
-    </header>
-
-    <!-- Body -->
-    <div class="w3-container">
-        <p class="w3-p-hieght"> <strong> <u>ຫຼັກການສຳຄັນຂອງການຄຸ້ມກັນ| Key principles of coverage</u> </strong> </p>
-        <p class="w3-p-hieght"> <strong> <u>ການຄຸ້ມກັນຂອງສັນຍາສະບັບນີ້ໄດ້ອີງໃສ່ເງື່ອນໄຂທົ່ວໄປຂອງການປະກັນໄພລົດແບບບັງຄັບ The Coverage of this insurance policy refers to general condition of compulsory motor Insurance.</u> </strong> </p>
-        <div class="w3-container">
-            <p> <strong>I. <u>ເງື່ອນໄຂການຄຸ້ມກັນ | Condition of Coverage</u> </strong> </p>
-            <div class="w3-container">
-                <p class="w3-p-hieght">1. ປະກັນໄພລົດແບບບັງຄັບ ຄຸ້ມກັນສະເພາະຄວາມເສຍຫາຍຕໍ່ ບຸກຄົນທີສາມ ໃນກໍລະນີບາດເຈັບ, ເສຍຊີວິດ ຫຼື ພິການຖາວອນ, ຄວາມເສຍຫາຍທາງດ້ານວັດຖຸ ຈາກອຸປະຕິເຫດທີ່ເກີດໂດຍ ລົດທີ່ໄດ້ຮັບການປະກັນໄພທີ່ເປັນຕົ້ນເຫດ | Compulsory Motor Insurance covers only damages to third parties in the event of injury, death or permanent disability, Material damage from the accident that caused by the insured vehicle.</p>
-                <p class="w3-p-hieght">2. ບຸກຄົນທີສາມ ໝາຍເຖິງ ບຸກຄົນອື່ນ (ຜູ້ຂັບຂີ່, ຜູ້ໂດຍສານ, ບຸກຄົນທີ່ຍ່າງຕາມແຄມທາງ, ບຸກຄົນທົ່ວໄປ) ເຊິ່ງໄດ້ຮັບຜົນກະທົບຈາກລົດທີ່ໄດ້ຮັບການປະກັນໄພ, ບໍ່ຄຸ້ມກັນຜູ້ຂັບຂີ່ ແລະ ຜູ້ໂດຍສານຢູ່ໃນລົດທີ່ໄດ້ຮັບການປະກັນໄພ | Third party is other person (driver, passenger, pedestrian, Other person) Which is affected from the insured vehicle, driver and passengers of the insured vehicle is not covered by third party.</p>
-                <p class="w3-p-hieght"><input type="checkbox">ສັນຍານີ້ມີການຊື້ການຄຸ້ມກັນເພີ້ມເຕີມສຳລັບທາງເລືອກຜູ້ຂັບຂີ່ ແລະ ຜູ້ໂດຍສານ / This policy has additional cover for driver and passengers.</p>
-            </div>
-        </div>
-        <div class="w3-container">
-            <p> <strong>II. <u>ຂໍ້ຍົກເວັ້ນ| Non-coverage conditions</u> </strong> </p>
-            <div class="w3-container">
-                <p class="w3-p-hieght">ການປະກັນໄພລົດແບບບັງຄັບ ບໍ່ຄຸ້ມກັນ ກໍລະນີດັ່ງຕໍ່ໄປນີ້| Compulsory Motor Insurance does not cover the following circumstances:</p>
-                <p class="w3-p-hieght">1. ຄວາມເສຍຫາຍ ຕໍ່ ລົດທີ່ໄດ້ຮັບການປະກັນໄພ| Damage to the insured vehicle;</p>
-                <p class="w3-p-hieght">2. ຄວາມເສຍຫາຍ ຕໍ່ ຊີວິດ ແລະ ຊັບສິນຂອງຜູ້ຂັບຂີ່ ແລະ ຜູ້ໂດຍສານໃນລົດທີ່ໄດ້ຮັບການປະກັນໄພ| Damage to life and property of the driver and passengers in the insured vehicle;</p>
-                <p class="w3-p-hieght">3. ຄວາມເສຍຫາຍທີ່ເກີດຂຶ້ນໂດຍເຈດຕະນາຂອງຜູ້ຂັບຂີ່ ຫຼື ຜູ້ຖືກເຄາະຮ້າຍ ທີ່ພາໃຫ້ເກີດມີອຸປະຕິເຫດ| Damage caused by the intention of driver's or victim's which cause an accident;</p>
-                <p class="w3-p-hieght">4. ກໍລະນີ ຜູ້ຂັບຂີ່ ໃບຂັບຂີ່ຍານພາຫະນະໝົດກຳນົດເກີນ 3 ເດືອນ ຫຼື ໃບຂັບຂີ່ບໍ່ຖືກຕ້ອງຕາມຊະນິດຍານພາຫະນະ| In case the vehicle driving license expires more than three months or the driving license is not correct according to the type of vehicle.</p>
-                <p class="w3-p-hieght">5. ກໍລະນີ ຜູ້ຂັບຂີ່ ມີຄວາມເຂັ້ມຂຸ້ນຂອງທາດເຫຼົ້າໃນຮ່າງກາຍເກີນປະລິມານຕາມທີ່ກົດໝາຍກຳນົດ| In case the driver has a concentration of alcohol in the body exceeding the amount prescribed by law.</p>
-                <p class="w3-p-hieght">6. ກໍລະນີ ຜູ້ຂັບຂີ່ ນຳໃຊ້ຢາເສບຕິດອື່ນໆ ທີ່້ຕ້ອງຫ້າມ| In case the driver uses other prohibited drugs.</p>
-                <p class="w3-p-hieght">7. ກໍລະນີ ທີ່ມີຄວາມເສຍຫາຍທີ່ເກີດຈາກໄພພິບັດທຳມະຊາດ, ສົງຄາມ, ການແຕກຕົວຂອງວັດຖຸປະລຳມະນູ, ການແຜ່ລັງສີ, ການກະທົບກັບກະມັນຕະພາບລັງສີຈາກເຊື້ອໄຟປະລຳມະນູ| In case of damage caused by natural disasters, war, nuclear fission, radiation, or exposure to radiation from nuclear fuel.</p>
-                <p class="w3-p-hieght">8. ການນຳໃຊ້ລົດນອກອານາເຂດດິນແດນຂອງ ສປປລາວ | Use of the vehicle outside Lao PDR. </p>
-                <p class="w3-p-hieght">9. ການເສຍຫາຍທີ່ເກີດຂຶ້ນຈາກການເຄື່ອນຍ້າຍສິນຄ້າຂຶ້ນ ຫຼື ລົງ ຈາກລົດທີ່ໄດ້ຮັບການປະກັນໄພ| Damage caused by the loading or unloading of goods up or down from an insured vehicle.</p>
-                <p class="w3-p-hieght">10. ການເສຍຫາຍທາງອ້ອມເຊັ່ນ: ການອັບປະໂຫຍດສ່ວນຕົວ, ຂາດລາຍຮັບທີ່ຄວນໄດ້ ແລະ ການຫຼຸ້ຍຫ້ຽນຂອງລົດທີ່ໄດ້ຮັບການປະກັນໄພ | Indirect damages such as personal impairment, lack of due income and depreciation of insured vehicles.</p>
-                <p class="w3-p-hieght">11. ການເສຍຫາຍທີ່ເກີດຈາກວັດຖຸລະເບີດທຸກຊະນິດ ທີ່ບັນຈຸຢູ່ໃນລົດທີ່ໄດ້ຮັບການປະກັນໄພ| Damage caused by any type of explosive ordnance contained in an insured vehicle.</p>
-                <p class="w3-p-hieght">12. ການຕົກລົງໃດໆກ່ຽວກັບຄວາມເສຍຫາຍ ແລະ ຄ່າເສຍຫາຍ ເຊິ່ງບໍ່ໄດ້ຮັບການເຫັນດີຈາກບໍລິສັດປະກັນໄພກ່ອນ | Any settlement of damages without prior approval from the insurance company.</p>
-                <p class="w3-p-hieght">13. ໃນກໍລະນີເກີດອຸປະຕິເຫດເວລານຳໃຊ້ລົດເພື່ອວັດຖຸປະສົງຜິດກົດໝາຍ | vehicles using for illegal purposes which cause the accident.</p>
-            </div>
-        </div>
-        <div class="w3-container">
-            <p class="w3-p-hieght"> <strong>III. <u>ການສິ້ນສຸດສັນຍາ| Termination of Contract</u> </strong> </p>
-            <div class="w3-container">
-                <p class="w3-p-hieght">1. ທະບຽນຍານພາຫະນະ ໄດ້ຖືກຍົກເລີກຈາກພາກສ່ວນທີ່ກ່ຽວຂ້ອງ| Vehicle registration has been revoked from the relevant section.</p>
-                <p class="w3-p-hieght">2. ຄົບກຳນົດສັນຍາ ໃນເວລາທ່ຽງຄືນ 23:59 ໂມງ ຂອງວັນທີສິ້ນສຸດສັນຍາ| The contract expires at 23:59 midnight on the date of expiration.</p>
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <footer>
-            <div class="w3-cell-row w3-text-gray">
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        ບໍລິສັດ ເຊັນໂທຣ ປະກັນໄພ<br>
-                        ເລກທີ່: xxx, ຖະໜົນ:xxxx <br>
-                        ຖະໜົນ ສະພັງໝໍ້, ບ້ານ ນາໄຊ, ເມືອງ ໄຊເສດຖາ, ນະຄອນຫຼວງວຽງຈັນ <br>
-                        ໂທລະສັບ: 020 1111 2222, ໂທ: 021 111222,  ແຈ້ງອຸປະຕິເຫດ 24 ຊົ່ວໂມງ ໂທ: 1112,
-                    </p>
-                </div>
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        Central Insurance Company Limited<br>
-                        xx, xxxxx Avenue <br>
-                        Saphangmor Road, Ban Naxay , Xaysettha District, Vientiane Capita <br>
-                        Phone: 020 1111 2222, Call: 021 111222, ;24 hrs./7 Accident Helpline: 1112,
-                    </p>
-                </div>
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        website: <a href="https://cic.com.la/">www.cic.com.la</a> <br>
-                        Email: info@cic.com.la <br>
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-
-
-<!-- Page Three  -->
-<div class="page phetsarath_ot" style="color: #002060;">
-    <!-- Header  -->
-    <!-- <header>
-      <div class="w3-cell-row">
-          <div class="w3-cell  ">
-              <img src="images/logo/portage-cic-logo.png" alt="logo-header" style="width:200px;">
-          </div>
-          <div class="w3-cell  ">
-              <p style="font-size:8px!important; text-align:right; color: #002060;" class="w3-right">
-                    <strong>ສອບຖາມລາຍລະອຽດ | More information, Call: 1111</strong><br>
-                    ແຈ້ງອຸປະຕິເຫດ | Accident Helpline, Call: 1112 <br>
-                    Website:<a href="https://cic.com.la/">www.cic.com.la</a>
-                </p>
-          </div>
-      </div>
-    </header> -->
-
-    <!-- Body -->
-    <div class="w3-container">
-        <p class="w3-p-hieght"> <strong> <i class="fa fa-star"></i><u> ຂໍ້ແນະນຳເພີ່ມເຕີມ| Additional instructions</u> </strong> </p>
-        <div class="w3-container">
-            <p class="w3-p-hieght">1.	ເມື່ອເກີດອຸປະຕິເຫດ ຕ້ອງແຈ້ງບໍລິສັດປະກັນໄພໃຫ້ຮັບຮູ້ທັນທີ ຍົກເວັ້ນເຫດສຸດວິໄສ, ຖ້າບໍ່ແຈ້ງຈະໜົດສິດໃນການໄດ້ຮັບສິນທົດແທນ | In the event of an accident, the insurance company must be notified immediately except in case of extreme circumstances, in case of not giving notice, you will lose your right to claims.</p>
-            <p class="w3-p-hieght">2.	ໃນກໍລະນີເກີດອຸປະຕິເຫດ ຢູ່ເຂດຫ່າງໄກສອກຫຼີກ ບໍ່ສາມາດຕິດຕໍ່ຫາບໍລິສັດປະກັນໄພໄດ້ ຄວນປະຕິບັດດັ່ງນີ້| In the event of an accident in a remote area where the insurance company cannot be contacted, the following actions should be taken:</p>
-            <div class="w3-container">
-                <p class="w3-p-hieght">2.1. ຕິດຕໍ່ຫາຕຳຫຼວດ ຫຼື ອຳນາດການປົກຄອງທ້ອງຖິ່ນ (ຕົວຢາງ: ນາຍບ້ານ) ເພື່ອເປັນພະຍານ ຫຼື ປະກອບເອກະສານຫຼັກຖານກ່ຽວກັບອຸປະຕິເຫດ| Contact the police or local authority (e.g. head of village) to witness or issue documentary about the accident.</p>
-                <p class="w3-p-hieght">2.2. ຮ່ວມກັບຄູ່ກໍລະນີເຮັດບົດບັນທຶກການເກີດອຸປະຕິເຫດດ້ວຍການຂຽນບົດບັນທຶກອຸປະຕິເຫດ| Together with the third party, make an accident report by writing an accident report.</p>
-                <p class="w3-p-hieght">2.3. ຖ່າຍຮູບລົດ ຫຼື ວັດຖຸທີ່ເສຍຫາຍໃນອຸປະຕິເຫດ, ຮູບຕ້ອງໃຫ້ເປັນປ້າຍລົດທີ່ຮ່ວມອຸປະຕິເຫດ, ຮ່ອງຮອຍຂອງຄວາມເສຍຫາຍ ແລະ ລາຍລະອຽດອື່ນໆກ່ຽວກັບອຸປະຕິເຫດ| Take photos of vehicles or objects damaged in the accident, the photo must show the plate of the vehicle involved in the accident, traces of damage and other details of the accident.</p>
-                <p class="w3-p-hieght">2.4. ນຳສົ່ງເອກະສານຕ່າງໆທີ່ກ່ຽວກັບອຸປະຕິເຫດໃຫ້ກັບບໍລິສັດປະກັນໄພໂດຍດ່ວນທີ່ສຸດ| Submit the related documents to the insurance company as soon as possible.</p>
-            </div>
-            <p class="w3-p-hieght">3.	ບໍ່ໃຫ້ເຄື່ອນຍ້າຍລົດເດັດຂາດ ນອກຈາກວ່າຈະເປັນການກີດຂວາງການຈາລະຈອນ ເຊິ່ງຕ້ອງຂີດໝາຍຮ່ອງຮອຍຂອງລົດ ແລະ ຕ້ອງຖ່າຍຮູບຂອງລົດທັງ 4 ດ້ານ ຖ້າບໍປະຕິບັດ ບໍລິສັດປະກັນໄພຈະບໍ່ຄຸ້ມກັນ| Please do not move the vehicle, unless it is to obstruct traffic, it needs to do the traces, mark of the vehicle, take photo all Four sides of the vehicle, otherwise the insurance company will not cover it.</p>
-            <p class="w3-p-hieght">4.	ຖ້າມີຄົນເຈັບຕ້ອງນຳສົ່ງໂຮງໝໍທີ່ໃກ້ທີ່ສຸດ ແລ້ວຈຶ່ງມາຕົກລົງກັນພາຍຫຼັງ| If there is the injured person, he or she must be taken to the nearest hospital, and then an agreement will be made later.</p>
-        </div>
-
-
-
-
-
-        <footer>
-            <div class="w3-cell-row w3-text-gray">
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        ບໍລິສັດ ເຊັນໂທຣ ປະກັນໄພ<br>
-                        ເລກທີ່: xxx, ຖະໜົນ:xxxx <br>
-                        ຖະໜົນ ສະພັງໝໍ້, ບ້ານ ນາໄຊ, ເມືອງ ໄຊເສດຖາ, ນະຄອນຫຼວງວຽງຈັນ <br>
-                        ໂທລະສັບ: 020 1111 2222, ໂທ: 021 111222,  ແຈ້ງອຸປະຕິເຫດ 24 ຊົ່ວໂມງ ໂທ: 1112,
-                    </p>
-                </div>
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        Central Insurance Company Limited<br>
-                        xx, xxxxx Avenue <br>
-                        Saphangmor Road, Ban Naxay , Xaysettha District, Vientiane Capita <br>
-                        Phone: 020 1111 2222, Call: 021 111222, ;24 hrs./7 Accident Helpline: 1112,
-                    </p>
-                </div>
-                <div class="w3-cell" style="vertical-align:bottom;">
-                    <p class="footer-font">
-                        website: <a href="https://cic.com.la/">www.cic.com.la</a> <br>
-                        Email: info@cic.com.la <br>
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-
+<script src="js/main.js"></script>
 </body>
 </html>
